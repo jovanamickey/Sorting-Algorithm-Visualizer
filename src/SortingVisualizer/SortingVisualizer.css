@@ -1,0 +1,50 @@
+.array-container {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.array-bar {
+    background-color: pink;
+    display: inline-block;
+    margin: 0 1px;
+}
+
+.button-bar {
+    width: 100%;
+    height: 95px;
+    background-color: lightslategray;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    gap: 30px; 
+    bottom: 0;
+    z-index: 1000;
+  }
+  
+.button-bar button {
+    padding: 10px 25px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: lightslategray;
+}
+  
+.button-bar button:disabled {
+    cursor: not-allowed;
+    color: lightgrey;
+}
+
+.width input, .speed input {
+    margin-top: 18px;
+}
+
+.width p, .speed p {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+}
